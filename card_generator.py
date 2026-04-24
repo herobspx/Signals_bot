@@ -110,7 +110,6 @@ def generate_trade_card(trade: Dict[str, Any], current_price: Any = None, status
     - خلفية الروبوت
     - جدول يمين بدون إطار
     - بيانات العقد بسطر واحد
-    - Watermark شفاف BAM | SPX
     """
     bg_path = Path(__file__).with_name("card_bg.png")
 
