@@ -158,7 +158,6 @@ def generate_trade_card(trade: Dict[str, Any], current_price: Any = None, status
     d.text((92, 520), f"▲ {sign}{diff:.2f}  {sign}{pct:.2f}%", font=f_change, fill=color)
 
     # Watermark شفاف في منتصف الصورة
-    wm = "BAM | SPX"
     bbox = d.textbbox((0, 0), wm, font=f_wm)
     wm_x = (W - (bbox[2] - bbox[0])) // 2
     wm_y = 410
