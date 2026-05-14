@@ -7,3 +7,4 @@ Pillow==10.4.0
 apscheduler==3.10.4
 arabic-reshaper==3.0.0
 python-bidi==0.4.2
+ib_insync
