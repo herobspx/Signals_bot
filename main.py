@@ -1,1 +1,0 @@
-# BAMSPX Bot main file
