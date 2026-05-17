@@ -85,7 +85,7 @@ def _mask(size, radius):
 
 
 def _load_card_bg() -> Image.Image:
-    bg_path = Path(__file__).with_name("card_bg.png")
+    bg_path = Path(__file__).with_name("NEW_BG.png")
 
     if bg_path.exists():
         raw = Image.open(bg_path).convert("RGB")
