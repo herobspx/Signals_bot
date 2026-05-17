@@ -12,8 +12,8 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps
 # Telegram-optimized landscape: the card fills the whole image.
 W, H = 1536, 1024
 
-CARD_X1, CARD_Y1 = 35, 80
-CARD_X2, CARD_Y2 = 1501, 875
+CARD_X1, CARD_Y1 = 20, 20
+CARD_X2, CARD_Y2 = 1580, 880
 CARD_W = CARD_X2 - CARD_X1
 CARD_H = CARD_Y2 - CARD_Y1
 
@@ -105,7 +105,7 @@ def _load_card_bg() -> Image.Image:
 def generate_trade_card(contract_data: Dict[str, Any], current_price: Any = None, status: str = "OPEN") -> str:
     cd = contract_data or {}
 
-    canvas = Image.new("RGBA", (W, H), (0, 0, 0, 255))
+    canvas = Image.new("RGBA", (W, H), (8, 8, 12, 255))
     bg = _load_card_bg().convert("RGBA")
 
     # Keep robot as watermark and make stats readable.
